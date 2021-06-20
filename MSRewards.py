@@ -32,11 +32,11 @@ time.sleep(50)
 #create in your folder a file txt with the words you want to search for
 file=open('a.txt')
 
-cicli=65
+cicli=54
 
 for n in range(cicli):
         a=n+1
-        if a<36:
+        if a<35:
                  
             if a<31:
                 print('chrome')       
