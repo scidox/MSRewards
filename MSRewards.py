@@ -25,11 +25,13 @@ browser.get(url)
 #now login in your mobile bing account manually
 time.sleep(50)
 
-#if you want to search for a text file  enable the following 2 lines and comment line: file=open('a.txt')
-#name= input ("What content of the text file do you want to search on web? ")
-#file=open(name)
-
 #create in your folder a file txt with the words you want to search for
+f=open('a.txt',encoding="utf8")
+#remove lines from text file used for precedent iteration
+removes=f.readlines()
+del removes[0:54]
+open('a.txt', 'w',encoding="utf8").writelines(removes)
+f.close()
 file=open('a.txt')
 
 cicli=54
